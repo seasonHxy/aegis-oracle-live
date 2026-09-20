@@ -5,7 +5,7 @@
 
 **A Rust + Solidity oracle MVP that aggregates real USD trade prices from Coinbase, Kraken and Bitstamp, then verifies signed reports on an EVM chain.**
 
-面向面试展示与工程学习的多源价格预言机：真实行情接入、源时间校验、异常过滤、EIP-712 签名、链上验证、交易恢复，以及可交互的中文监控页面。
+多源价格预言机 MVP：真实行情接入、源时间校验、异常过滤、EIP-712 签名、链上验证、交易恢复，以及可交互的中文监控页面。
 
 **演示范围明确：真实行情来自公开 REST API；合约演示使用本地 Anvil；单签名者，不是去中心化共识网络，也不代表可直接承载主网资产。**
 
@@ -91,7 +91,7 @@ CI 运行解析器、配置、HTTP 重试/退避、聚合、签名、合约、�
 - [场景与测试](docs/SCENARIOS_AND_TESTS.md)：继承场景的详细矩阵；本版本增量以真实行情文档为准。
 - [原版本验收](docs/VALIDATION.md)：保留的基线测试记录。
 
-## 适合面试讨论的工程取舍
+## 工程取舍
 
 1. **为什么最新成交价配成交时间？** 刚收到 HTTP 响应并不能证明市场报价新鲜。
 2. **为什么三个来源不等于去中心化？** 数据来源分散，报告签名者仍然只有一个。
@@ -99,7 +99,7 @@ CI 运行解析器、配置、HTTP 重试/退避、聚合、签名、合约、�
 4. **为什么先保存交易再广播？** 服务重启后可以追踪或重播同一笔交易，减少 nonce 不确定性。
 5. **为什么拆分确定性测试和实网检查？** 分别验证软件逻辑与当前外部可用性。
 
-两分钟讲解见 [面试说明](docs/PROJECT_DESCRIPTION.md)。
+详细介绍见 [项目说明](docs/PROJECT_DESCRIPTION.md)。
 
 ## 部署与范围
 

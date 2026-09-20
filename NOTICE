@@ -13,4 +13,4 @@ are added by this project. No affiliation with or endorsement by Hyperliquid is 
 
 Aegis Oracle Live 0.2 adds Coinbase, Kraken and Bitstamp native USD trade
 adapters, source-time normalization, bounded HTTP retry/backoff, and opt-in
-live market evidence. Public portfolio repository: seasonHxy/aegis-oracle-live.
+live market evidence. Public repository: seasonHxy/aegis-oracle-live.
