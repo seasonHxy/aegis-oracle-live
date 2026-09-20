@@ -1,0 +1,19 @@
+{
+  "feed": "ETH/USD",
+  "simulation": true,
+  "interval_ms": 5000,
+  "max_age_secs": 60,
+  "min_sources": 3,
+  "min_groups": 3,
+  "max_spread_bps": 100,
+  "outlier_band_bps": 30,
+  "mad_multiplier": 3,
+  "max_confidence_bps": 100,
+  "max_jump_bps": 500,
+  "sources": [
+    {"name":"demo-alpha","group":"alpha","kind":"static","price":"3000.00"},
+    {"name":"demo-beta","group":"beta","kind":"static","price":"3001.00"},
+    {"name":"demo-gamma","group":"gamma","kind":"static","price":"2999.00"},
+    {"name":"demo-outlier","group":"delta","kind":"static","price":"9000.00"}
+  ]
+}

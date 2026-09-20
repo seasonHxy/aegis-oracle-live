@@ -1,0 +1,56 @@
+{
+  "dex": "demo",
+  "network": "testnet",
+  "intervalMs": 3000,
+  "dryRun": true,
+  "stateFile": "../state/oracle-state.json",
+  "markPriceSets": 0,
+  "sources": {
+    "venue-a": {
+      "kind": "static",
+      "independenceGroup": "venue-a",
+      "weight": "1",
+      "prices": { "AAPL": "230.18" },
+      "marketStatus": "open"
+    },
+    "venue-b": {
+      "kind": "static",
+      "independenceGroup": "venue-b",
+      "weight": "1",
+      "prices": { "AAPL": "230.20" },
+      "marketStatus": "open"
+    },
+    "venue-c": {
+      "kind": "static",
+      "independenceGroup": "venue-c",
+      "weight": "1",
+      "prices": { "AAPL": "230.22" },
+      "marketStatus": "open"
+    },
+    "bad-outlier": {
+      "kind": "static",
+      "independenceGroup": "venue-d",
+      "weight": "1",
+      "prices": { "AAPL": "500.00" },
+      "marketStatus": "open"
+    }
+  },
+  "feeds": [
+    {
+      "coin": "AAPL",
+      "szDecimals": 2,
+      "sources": ["venue-a", "venue-b", "venue-c", "bad-outlier"],
+      "minSources": 3,
+      "minIndependentGroups": 3,
+      "maxSourceAgeMs": 5000,
+      "maxFutureMs": 1000,
+      "maxSpreadBps": "50",
+      "outlierMadMultiplier": "6",
+      "outlierMinBandBps": "10",
+      "maxConfidenceBps": "20",
+      "maxJumpBps": "1000",
+      "blockWhenMarketClosed": false,
+      "blockWhenMarketUnknown": false
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[workspace]
+members = ["oracle-node"]
+resolver = "2"

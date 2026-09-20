@@ -1,0 +1,39 @@
+{
+  "feed": "ETH/USD",
+  "simulation": false,
+  "interval_ms": 5000,
+  "max_age_secs": 60,
+  "min_sources": 3,
+  "min_groups": 3,
+  "max_spread_bps": 100,
+  "outlier_band_bps": 30,
+  "mad_multiplier": 3,
+  "max_confidence_bps": 100,
+  "max_jump_bps": 500,
+  "sources": [
+    {
+      "name": "provider-a",
+      "group": "independent-provider-a",
+      "kind": "json",
+      "url": "https://provider-a.example/quotes/ETH-USD",
+      "price_path": "/data/price",
+      "timestamp_path": "/data/timestamp"
+    },
+    {
+      "name": "provider-b",
+      "group": "independent-provider-b",
+      "kind": "json",
+      "url": "https://provider-b.example/quotes/ETH-USD",
+      "price_path": "/data/price",
+      "timestamp_path": "/data/timestamp"
+    },
+    {
+      "name": "provider-c",
+      "group": "independent-provider-c",
+      "kind": "json",
+      "url": "https://provider-c.example/quotes/ETH-USD",
+      "price_path": "/data/price",
+      "timestamp_path": "/data/timestamp"
+    }
+  ]
+}

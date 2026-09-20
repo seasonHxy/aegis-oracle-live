@@ -1,0 +1,30 @@
+{
+  "feed": "ETH/USD",
+  "simulation": false,
+  "interval_ms": 10000,
+  "max_age_secs": 60,
+  "min_sources": 3,
+  "min_groups": 3,
+  "max_spread_bps": 100,
+  "outlier_band_bps": 30,
+  "mad_multiplier": 3,
+  "max_confidence_bps": 100,
+  "max_jump_bps": 500,
+  "sources": [
+    {
+      "name": "coinbase",
+      "group": "coinbase",
+      "kind": "coinbase"
+    },
+    {
+      "name": "kraken",
+      "group": "kraken",
+      "kind": "kraken"
+    },
+    {
+      "name": "bitstamp",
+      "group": "bitstamp",
+      "kind": "bitstamp"
+    }
+  ]
+}

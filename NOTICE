@@ -1,0 +1,16 @@
+Aegis Oracle
+
+Derived from HIP-3 Oracle by HIP-3 Oracle Contributors.
+Upstream: https://github.com/seasonHxy/hip3-oracle
+Baseline: 0da6204 (retrieved 2026-09-20)
+Upstream license: MIT; original copyright and license retained in LICENSE.
+
+legacy/hip3 retains the original Python source, tests, configuration and documentation.
+The Rust aggregation implements the upstream independence-group weighted median,
+MAD filtering and quorum concepts with the differences documented in docs/ARCHITECTURE.md.
+The Solidity contracts, Rust EVM publisher, dashboard and local integration tooling
+are added by this project. No affiliation with or endorsement by Hyperliquid is implied.
+
+Aegis Oracle Live 0.2 adds Coinbase, Kraken and Bitstamp native USD trade
+adapters, source-time normalization, bounded HTTP retry/backoff, and opt-in
+live market evidence. Public portfolio repository: seasonHxy/aegis-oracle-live.

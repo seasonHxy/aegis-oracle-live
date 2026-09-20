@@ -1,0 +1,13 @@
+/target/
+/contracts/out/
+/contracts/cache/
+/contracts/broadcast/
+/contracts/lib/
+/state/*
+!/state/.gitkeep
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/

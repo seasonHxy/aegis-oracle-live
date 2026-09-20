@@ -1,0 +1,186 @@
+{
+  "project": "Aegis Oracle Live",
+  "started_at": "2026-09-20T09:50:19.619862+00:00",
+  "feed": "ETH/USD",
+  "chain_publication": false,
+  "quorum": 3,
+  "note": "Point-in-time public API observations; not an uptime guarantee or production benchmark.",
+  "samples": [
+    {
+      "feed": "ETH/USD",
+      "mode": "DRY RUN",
+      "simulated": false,
+      "status": "dry_run",
+      "cycle_at_ms": 1789897820624,
+      "aggregate": {
+        "price": "2581.90000000",
+        "observed_at": 1789897790,
+        "confidence_bps": 1,
+        "source_count": 3,
+        "group_count": 3,
+        "accepted": [
+          "bitstamp",
+          "coinbase",
+          "kraken"
+        ],
+        "rejected": []
+      },
+      "quotes": [
+        {
+          "source": "bitstamp",
+          "group": "bitstamp",
+          "weight": 1,
+          "price": "2581.90000000",
+          "observed_at_ms": 1789897790000,
+          "received_at_ms": 1789897821256,
+          "latency_ms": 632,
+          "bid": null,
+          "ask": null
+        },
+        {
+          "source": "coinbase",
+          "group": "coinbase",
+          "weight": 1,
+          "price": "2581.81000000",
+          "observed_at_ms": 1789897819655,
+          "received_at_ms": 1789897821216,
+          "latency_ms": 592,
+          "bid": 258165000000,
+          "ask": 258175000000
+        },
+        {
+          "source": "kraken",
+          "group": "kraken",
+          "weight": 1,
+          "price": "2582.03000000",
+          "observed_at_ms": 1789897819245,
+          "received_at_ms": 1789897821221,
+          "latency_ms": 597,
+          "bid": null,
+          "ask": null
+        }
+      ],
+      "source_errors": [],
+      "error": null,
+      "exit_code": 0
+    },
+    {
+      "feed": "ETH/USD",
+      "mode": "DRY RUN",
+      "simulated": false,
+      "status": "dry_run",
+      "cycle_at_ms": 1789897829687,
+      "aggregate": {
+        "price": "2581.90000000",
+        "observed_at": 1789897790,
+        "confidence_bps": 1,
+        "source_count": 3,
+        "group_count": 3,
+        "accepted": [
+          "bitstamp",
+          "coinbase",
+          "kraken"
+        ],
+        "rejected": []
+      },
+      "quotes": [
+        {
+          "source": "bitstamp",
+          "group": "bitstamp",
+          "weight": 1,
+          "price": "2581.90000000",
+          "observed_at_ms": 1789897790000,
+          "received_at_ms": 1789897830099,
+          "latency_ms": 410,
+          "bid": null,
+          "ask": null
+        },
+        {
+          "source": "coinbase",
+          "group": "coinbase",
+          "weight": 1,
+          "price": "2581.82000000",
+          "observed_at_ms": 1789897825244,
+          "received_at_ms": 1789897829935,
+          "latency_ms": 246,
+          "bid": 258160000000,
+          "ask": 258161000000
+        },
+        {
+          "source": "kraken",
+          "group": "kraken",
+          "weight": 1,
+          "price": "2582.03000000",
+          "observed_at_ms": 1789897819245,
+          "received_at_ms": 1789897830122,
+          "latency_ms": 432,
+          "bid": null,
+          "ask": null
+        }
+      ],
+      "source_errors": [],
+      "error": null,
+      "exit_code": 0
+    },
+    {
+      "feed": "ETH/USD",
+      "mode": "DRY RUN",
+      "simulated": false,
+      "status": "dry_run",
+      "cycle_at_ms": 1789897839635,
+      "aggregate": {
+        "price": "2581.90000000",
+        "observed_at": 1789897790,
+        "confidence_bps": 1,
+        "source_count": 3,
+        "group_count": 3,
+        "accepted": [
+          "bitstamp",
+          "coinbase",
+          "kraken"
+        ],
+        "rejected": []
+      },
+      "quotes": [
+        {
+          "source": "bitstamp",
+          "group": "bitstamp",
+          "weight": 1,
+          "price": "2581.90000000",
+          "observed_at_ms": 1789897790000,
+          "received_at_ms": 1789897840102,
+          "latency_ms": 466,
+          "bid": null,
+          "ask": null
+        },
+        {
+          "source": "coinbase",
+          "group": "coinbase",
+          "weight": 1,
+          "price": "2581.84000000",
+          "observed_at_ms": 1789897835839,
+          "received_at_ms": 1789897839892,
+          "latency_ms": 256,
+          "bid": 258189000000,
+          "ask": 258190000000
+        },
+        {
+          "source": "kraken",
+          "group": "kraken",
+          "weight": 1,
+          "price": "2582.03000000",
+          "observed_at_ms": 1789897819245,
+          "received_at_ms": 1789897840048,
+          "latency_ms": 412,
+          "bid": null,
+          "ask": null
+        }
+      ],
+      "source_errors": [],
+      "error": null,
+      "exit_code": 0
+    }
+  ],
+  "passed": true,
+  "finished_at": "2026-09-20T09:50:40.127443+00:00"
+}

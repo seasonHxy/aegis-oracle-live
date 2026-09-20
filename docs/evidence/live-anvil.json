@@ -1,0 +1,96 @@
+{
+  "note": "Real exchange prices published to disposable local Anvil, not a public network.",
+  "snapshot": {
+    "name": "Aegis Oracle Live",
+    "mode": "EVM",
+    "simulated": false,
+    "feed": "ETH/USD",
+    "status": "published",
+    "cycle_at_ms": 1789897922362,
+    "last_success_ms": 1789897922932,
+    "max_age_secs": 60,
+    "chain_id": 31337,
+    "contract": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "tx_hash": "0xaa8dcbd9efcde5142259efdd08ccb5d551cf3d91150a74c13bc5c42769eb9872",
+    "aggregate": {
+      "price": "2581.87000000",
+      "observed_at": 1789897914,
+      "confidence_bps": 1,
+      "source_count": 3,
+      "group_count": 3,
+      "accepted": [
+        "bitstamp",
+        "coinbase",
+        "kraken"
+      ],
+      "rejected": []
+    },
+    "quotes": [
+      {
+        "source": "bitstamp",
+        "group": "bitstamp",
+        "weight": 1,
+        "price": "2581.87000000",
+        "observed_at_ms": 1789897914000,
+        "received_at_ms": 1789897922638,
+        "latency_ms": 269,
+        "bid": null,
+        "ask": null
+      },
+      {
+        "source": "coinbase",
+        "group": "coinbase",
+        "weight": 1,
+        "price": "2581.69000000",
+        "observed_at_ms": 1789897921953,
+        "received_at_ms": 1789897922480,
+        "latency_ms": 112,
+        "bid": 258134000000,
+        "ask": 258170000000
+      },
+      {
+        "source": "kraken",
+        "group": "kraken",
+        "weight": 1,
+        "price": "2581.90000000",
+        "observed_at_ms": 1789897920921,
+        "received_at_ms": 1789897922640,
+        "latency_ms": 271,
+        "bid": null,
+        "ask": null
+      }
+    ],
+    "source_errors": [],
+    "error": null,
+    "history": [
+      {
+        "at": 1789897863062,
+        "price": "2581.44000000"
+      },
+      {
+        "at": 1789897872958,
+        "price": "2581.64000000"
+      },
+      {
+        "at": 1789897882944,
+        "price": "2581.84000000"
+      },
+      {
+        "at": 1789897892929,
+        "price": "2581.96000000"
+      },
+      {
+        "at": 1789897902953,
+        "price": "2581.90000000"
+      },
+      {
+        "at": 1789897912934,
+        "price": "2581.75000000"
+      },
+      {
+        "at": 1789897922932,
+        "price": "2581.87000000"
+      }
+    ]
+  }
+}

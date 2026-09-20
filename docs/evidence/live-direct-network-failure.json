@@ -1,0 +1,71 @@
+{
+  "project": "Aegis Oracle Live",
+  "started_at": "2026-09-20T09:46:28.831426+00:00",
+  "feed": "ETH/USD",
+  "chain_publication": false,
+  "quorum": 3,
+  "note": "Point-in-time public API observations; not an uptime guarantee or production benchmark.",
+  "samples": [
+    {
+      "feed": "ETH/USD",
+      "mode": "DRY RUN",
+      "simulated": false,
+      "status": "blocked",
+      "cycle_at_ms": 1789897588888,
+      "aggregate": null,
+      "quotes": [
+        {
+          "source": "coinbase",
+          "group": "coinbase",
+          "weight": 1,
+          "price": "2582.80000000",
+          "observed_at_ms": 1789897583607,
+          "received_at_ms": 1789897589230,
+          "latency_ms": 340,
+          "bid": 258280000000,
+          "ask": 258291000000
+        }
+      ],
+      "source_errors": [
+        "bitstamp: timeout",
+        "kraken: transport_error"
+      ],
+      "error": "insufficient valid sources: 1 < 3",
+      "exit_code": 1
+    },
+    {
+      "feed": "ETH/USD",
+      "mode": "DRY RUN",
+      "simulated": false,
+      "status": "blocked",
+      "cycle_at_ms": 1789897598861,
+      "aggregate": null,
+      "quotes": [],
+      "source_errors": [
+        "bitstamp: timeout",
+        "coinbase: transport_error",
+        "kraken: transport_error"
+      ],
+      "error": "insufficient valid sources: 0 < 3",
+      "exit_code": 1
+    },
+    {
+      "feed": "ETH/USD",
+      "mode": "DRY RUN",
+      "simulated": false,
+      "status": "blocked",
+      "cycle_at_ms": 1789897608873,
+      "aggregate": null,
+      "quotes": [],
+      "source_errors": [
+        "bitstamp: timeout",
+        "coinbase: transport_error",
+        "kraken: transport_error"
+      ],
+      "error": "insufficient valid sources: 0 < 3",
+      "exit_code": 1
+    }
+  ],
+  "passed": false,
+  "finished_at": "2026-09-20T09:46:57.086057+00:00"
+}

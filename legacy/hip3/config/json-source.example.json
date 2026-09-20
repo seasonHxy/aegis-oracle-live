@@ -1,0 +1,17 @@
+{
+  "kind": "json",
+  "independenceGroup": "licensed-provider-a",
+  "weight": "1",
+  "url": "https://data-provider.example/v1/quotes/{symbol}",
+  "symbols": { "AAPL": "AAPL" },
+  "headers": { "Authorization": "Bearer ${PROVIDER_A_TOKEN}" },
+  "pricePath": "data.mid",
+  "bidPath": "data.bid",
+  "askPath": "data.ask",
+  "timestampPath": "data.timestamp",
+  "timestampUnit": "ms",
+  "statusPath": "data.session",
+  "statusMap": { "regular": "open", "closed": "closed" },
+  "timeoutMs": 1500,
+  "maxResponseBytes": 1000000
+}
