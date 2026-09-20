@@ -18,4 +18,3 @@ Aegis Oracle Live 是一个 Rust + Solidity 多源价格预言机 MVP，从 Coin
 2. `python3 scripts/demo.py --live-data`：真实数据上本地链，读取抵押估值。
 3. `make check`：重现确定性测试，展示来源故障及健康状态恢复。
 4. `make live-smoke`：保存当前实网观察；来源失效时记录失败状态。
-
